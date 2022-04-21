@@ -14,14 +14,41 @@ ReactDOM.render(
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-let a = {
-    name: "Roman",
-    age: 30,
-    address: {
-        city: "Minsk",
-        country: "Belarus"
+// let a = {
+//     name: "Roman",
+//     age: 30,
+//     address: {
+//         city: "Minsk",
+//         country: "Belarus"
+//     }
+// };
+
+let users = [
+    {
+        name: "Roman",
+        age: 30,
+        address: {
+            city: "Minsk",
+            country: "Belarus"
+        }
+    },
+    {
+        name: "Alex",
+        age: 20,
+        address: {
+            city: "Minsk",
+            country: "Belarus"
+        }
+    },
+    {
+        name: "Oleg",
+        age: 40,
+        address: {
+            city: "Minsk",
+            country: "Belarus"
+        }
     }
-};
+]
 
-console.log (a.address.country);
-
+// console.log (a.address.country);
+console.log (users[0].address.country);
