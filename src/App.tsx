@@ -74,6 +74,8 @@ function App () {
     return  (
         <div>
             This is APP
+            <Rating/>
+            <Accordion/>
         </div>
     );
 }
@@ -106,11 +108,11 @@ function Accordion () {
 }
 
 
-function Hello () {
-    debugger;
-    alert("Hello")
-}
-
-Hello();
+// function Hello () {
+//     debugger;
+//     alert("Hello")
+// }
+//
+// Hello();
 
 export default App;
