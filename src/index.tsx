@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from "./App";
 import * as serviceWorker from './serviceWorker';
 import {finished} from "stream";
 
@@ -61,40 +61,47 @@ serviceWorker.unregister();
 // // console.log (a.address.country);
 // console.log (users[0].address.country);
 
-function Ololo () {
-    // полезное здесь
-    // возвращаем JSX => HTML подобный js
-    return  (
-        <div>
-            This is APP
-        </div>
-    );
+// function Ololo () {
+//     // полезное здесь
+//     // возвращаем JSX => HTML подобный js
+//     return  (
+//         <div>
+//             This is APP
+//         </div>
+//     );
+// }
+//
+// function Rating () {
+//     // полезное здесь
+//     // возвращаем JSX => HTML подобный js
+//     return  (
+//         <div>
+//             <div>star</div>
+//             <div>star</div>
+//             <div>star</div>
+//             <div>star</div>
+//             <div>star</div>
+//         </div>
+//     );
+// }
+//
+// function Accordion () {
+//     // полезное здесь
+//     // возвращаем JSX => HTML подобный js
+//     return <div>
+//         <h3>Меню</h3>
+//         <ul>
+//             <li>1</li>
+//             <li>2</li>
+//             <li>3</li>
+//         </ul>
+//     </div>
+// }
+
+
+function Hello () {
+    debugger;
+    alert("Hello")
 }
 
-function Rating () {
-    // полезное здесь
-    // возвращаем JSX => HTML подобный js
-    return  (
-        <div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-            <div>star</div>
-        </div>
-    );
-}
-
-function Accordion () {
-    // полезное здесь
-    // возвращаем JSX => HTML подобный js
-    return <div>
-        <h3>Меню</h3>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </ul>
-    </div>
-}
-
+Hello();
