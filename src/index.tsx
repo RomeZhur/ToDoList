@@ -84,3 +84,17 @@ function Rating () {
         </div>
     );
 }
+
+function Accordion () {
+    // полезное здесь
+    // возвращаем JSX => HTML подобный js
+    return <div>
+        <h3>Меню</h3>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+}
+
