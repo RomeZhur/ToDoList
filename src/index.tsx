@@ -61,8 +61,17 @@ serviceWorker.unregister();
 // // console.log (a.address.country);
 // console.log (users[0].address.country);
 
+function Ololo () {
+    // полезное здесь
+    // возвращаем JSX => HTML подобный js
+    return  (
+        <div>
+            This is APP
+        </div>
+    );
+}
 
-function App () {
+function Rating () {
     // полезное здесь
     // возвращаем JSX => HTML подобный js
     return  (
@@ -73,5 +82,5 @@ function App () {
             <div>star</div>
             <div>star</div>
         </div>
-    )
-};
+    );
+}
