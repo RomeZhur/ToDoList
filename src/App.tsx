@@ -108,11 +108,11 @@ function Accordion () {
 }
 
 
-// function Hello () {
-//     debugger;
-//     alert("Hello")
-// }
-//
-// Hello();
+function Hello () {
+    debugger;
+    alert("Hello")
+}
+
+Hello();
 
 export default App;
