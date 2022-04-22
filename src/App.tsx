@@ -68,51 +68,51 @@ function App() {
 // // console.log (a.address.country);
 // console.log (users[0].address.country);
 
-// function App () {
-//     // полезное здесь
-//     // возвращаем JSX => HTML подобный js
-//     return  (
-//         <div>
-//             This is APP
-//             <Rating/>
-//             <Accordion/>
-//         </div>
-//     );
+function App () {
+    // полезное здесь
+    // возвращаем JSX => HTML подобный js
+    return  (
+        <div>
+            This is APP
+            <Rating/>
+            <Accordion/>
+        </div>
+    );
+}
+
+function Rating () {
+    // полезное здесь
+    // возвращаем JSX => HTML подобный js
+    return  (
+        <div>
+            <div>star</div>
+            <div>star</div>
+            <div>star</div>
+            <div>star</div>
+            <div>star</div>
+        </div>
+    );
+}
+
+function Accordion () {
+    // полезное здесь
+    // возвращаем JSX => HTML подобный js
+    return <div>
+        <h3>Меню</h3>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+}
+
+
+// function Hello () {
+//     debugger;
+//     alert("Hello")
 // }
 //
-// function Rating () {
-//     // полезное здесь
-//     // возвращаем JSX => HTML подобный js
-//     return  (
-//         <div>
-//             <div>star</div>
-//             <div>star</div>
-//             <div>star</div>
-//             <div>star</div>
-//             <div>star</div>
-//         </div>
-//     );
-// }
-//
-// function Accordion () {
-//     // полезное здесь
-//     // возвращаем JSX => HTML подобный js
-//     return <div>
-//         <h3>Меню</h3>
-//         <ul>
-//             <li>1</li>
-//             <li>2</li>
-//             <li>3</li>
-//         </ul>
-//     </div>
-// }
-//
-//
-// // function Hello () {
-// //     debugger;
-// //     alert("Hello")
-// // }
-// //
-// // Hello();
+// Hello();
 
 export default App;
