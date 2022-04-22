@@ -65,7 +65,7 @@ function App() {
 // // let b = 10;
 // // b     = 115;
 // //
-// // // console.log (a.address.country);
+// // console.log (a.address.country);
 // // console.log (users[0].address.country);
 //
 // function App () {
