@@ -8,10 +8,17 @@ import TodoList from "./TodoList";
 // update
 // delete
 
+type TaskType =
+
 function App () {
     const todoListTitle_1 = "What_1"
     const todoListTitle_2 = "What_2"
     const todoListTitle_3 = "What_3"
+    const tasks = [
+        {id: 1, title: "HTML", isDone: true},
+        {id: 2, title: "JS", isDone: true},
+        {id: 3, title: "React", isDone: true},
+    ]
     return (
         <div className="App">
             <TodoList title={todoListTitle_1}/>
