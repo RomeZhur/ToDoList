@@ -26,11 +26,13 @@ const TodoList = (props: TodoListPropsType) => {
                     <span>{props.tasks[2].title}</span>
                 </li>
             </ul>
+
             <div>
                 <button>All</button>
                 <button>Active</button>
                 <button>Completed</button>
             </div>
+
         </div>
     );
 };
