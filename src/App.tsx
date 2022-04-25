@@ -9,11 +9,14 @@ import TodoList from "./TodoList";
 // delete
 
 function App () {
+    const todoListTitle_1 = "What_1"
+    const todoListTitle_2 = "What_2"
+    const todoListTitle_3 = "What_3"
     return (
         <div className="App">
-            <TodoList/>
-            <TodoList/>
-            <TodoList/>
+            <TodoList title={todoListTitle_1}/>
+            <TodoList title={todoListTitle_2}/>
+            <TodoList title={todoListTitle_3}/>
         </div>
     );
 }
