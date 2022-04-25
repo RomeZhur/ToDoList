@@ -35,7 +35,6 @@ function App () {
     );
 }
 
-
 // // let a = {
 // //     name: "Roman",
 // //     age: 30,
