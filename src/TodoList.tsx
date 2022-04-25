@@ -14,6 +14,7 @@ const TodoList = (props: TodoListPropsType) => {
                 <input/>
                 <button>+</button>
             </div>
+
             <ul>
                 <li><input type="checkbox" checked={props.tasks[0].isDone}/>
                     <span>{props.tasks[0].title}</span>
