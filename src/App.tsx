@@ -15,7 +15,7 @@ export type TaskType = {
 }
 
 function App () {
-    const todoListTitle_1        = "Awesome"
+    const todoListTitle_1           = "Awesome"
     // const todoListTitle_2        = "What_2"
     // const todoListTitle_3        = "What_3"
     const tasks: Array<TaskType> = [
