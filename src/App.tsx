@@ -1,6 +1,12 @@
 import React from 'react';
 import './App.css';
 
+// GRUD -> GUI || CLI
+// create
+// read
+// update
+// delete
+
 function App() {
     return (
         <div className="App">
