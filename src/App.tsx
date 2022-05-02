@@ -11,28 +11,16 @@ import TodoList, {TaskType} from "./TodoList";
 
 function App () {
     //BILL
-
-    let [tasks, setTasks] = useState([
+    const [tasks, setTasks] = useState <Array<TaskType>>([
             {id: 1, title: "HTML", isDone: true},
             {id: 2, title: "JS", isDone: true},
             {id: 3, title: "React", isDone: false},
-            {id: 4, title: "React", isDone: false},
         ])
 
-    const todoListTitle_1           = "What_1"
-    // const todoListTitle_2        = "What_2"
-    // const todoListTitle_3        = "What_3"
-
-    let tasks: Array<TaskType> = [
-        {id: 1, title: "HTML", isDone: true},
-        {id: 2, title: "JS", isDone: true},
-        {id: 3, title: "React", isDone: false},
-        {id: 4, title: "React", isDone: false},
-    ]
+    const todoListTitle_1 : string = "What to learn"
 
     const removeTask = (tasksID: number) => {
-        setTasks(tasks = tasks.filter(t =>t.id !==tasksID))
-        console.log (tasks)
+        setTasks(tasks.filter(t =>t.id !==tasksID))
     }
 
     return (
