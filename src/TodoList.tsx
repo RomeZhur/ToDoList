@@ -1,13 +1,30 @@
 import React from 'react';
-import {TaskType} from "./App";
 
 type TodoListPropsType = {
     title: string
     tasks: TaskType []
+    removeTask: (taskID:number) => void
+}
+
+export type TaskType = {
+    id: number
+    title: string
+    isDone: boolean
 }
 
 const TodoList = (props: TodoListPropsType) => {
+    const tasksJSXElements = props.tasks.map(element => {
+        const removeTask = () => props.removeTask (element.id)
+            return (
+            <li key={element.id}>
+                <input type="checkbox" checked={element.isDone}/>
+                <span>{element.title}</span>
+            </li>
+        )
+    })
+
     return (
+
         <div>
             <h3>{props.title}</h3>
             <div>
@@ -16,15 +33,7 @@ const TodoList = (props: TodoListPropsType) => {
             </div>
 
             <ul>
-                <li><input type="checkbox" checked={props.tasks[0].isDone}/>
-                    <span>{props.tasks[0].title}</span>
-                </li>
-                <li><input type="checkbox" checked={props.tasks[1].isDone}/>
-                    <span>{props.tasks[1].title}</span>
-                </li>
-                <li><input type="checkbox" checked={props.tasks[2].isDone}/>
-                    <span>{props.tasks[2].title}</span>
-                </li>
+                {tasksJSXElements}
             </ul>
 
             <div>

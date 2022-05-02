@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import TodoList from "./TodoList";
+import TodoList, {TaskType} from "./TodoList";
 
 // GRUD -> GUI || CLI
 // create
@@ -8,120 +8,44 @@ import TodoList from "./TodoList";
 // update
 // delete
 
-export type TaskType = {
-    id: number
-    title: string
-    isDone: boolean
-}
 
 function App () {
+    //BILL
+
+    let [tasks, setTasks] = useState([
+            {id: 1, title: "HTML", isDone: true},
+            {id: 2, title: "JS", isDone: true},
+            {id: 3, title: "React", isDone: false},
+            {id: 4, title: "React", isDone: false},
+        ])
+
     const todoListTitle_1           = "What_1"
     // const todoListTitle_2        = "What_2"
     // const todoListTitle_3        = "What_3"
-    const tasks: Array<TaskType> = [
+
+    let tasks: Array<TaskType> = [
         {id: 1, title: "HTML", isDone: true},
         {id: 2, title: "JS", isDone: true},
         {id: 3, title: "React", isDone: false},
+        {id: 4, title: "React", isDone: false},
     ]
+
+    const removeTask = (tasksID: number) => {
+        setTasks(tasks = tasks.filter(t =>t.id !==tasksID))
+        console.log (tasks)
+    }
+
     return (
         <div className="App">
             <TodoList
                 title={todoListTitle_1}
                 tasks={tasks}
+                removeTask={removeTask}
             />
             {/*<TodoList title={todoListTitle_2}/>*/}
             {/*<TodoList title={todoListTitle_3}/>*/}
         </div>
     );
 }
-
-// // let a = {
-// //     name: "Roman",
-// //     age: 30,
-// //     address: {
-// //         city: "Minsk",
-// //         country: "Belarus"
-// //     }
-// // };
-//
-// // let users = [
-// //     {
-// //         name: "Roman",
-// //         age: 30,
-// //         address: {
-// //             city: "Minsk",
-// //             country: "Belarus"
-// //         }
-// //     },
-// //     {
-// //         name: "Alex",
-// //         age: 20,
-// //         address: {
-// //             city: "Minsk",
-// //             country: "Belarus"
-// //         }
-// //     },
-// //     {
-// //         name: "Oleg",
-// //         age: 40,
-// //         address: {
-// //             city: "Minsk",
-// //             country: "Belarus"
-// //         }
-// //     }
-// // ]
-// //
-// // let b = 10;
-// // b     = 115;
-// //
-// // console.log (a.address.country);
-// // console.log (users[0].address.country);
-//
-// function App () {
-//     // полезное здесь
-//     // возвращаем JSX => HTML подобный js
-//     return  (
-//         <div>
-//             This is APP
-//             <Rating/>
-//             <Accordion/>
-//         </div>
-//     );
-// }
-//
-// function Rating () {
-//     // полезное здесь
-//     // возвращаем JSX => HTML подобный js
-//     return  (
-//         <div>
-//             <div>star</div>
-//             <div>star</div>
-//             <div>star</div>
-//             <div>star</div>
-//             <div>star</div>
-//         </div>
-//     );
-// }
-//
-// function Accordion () {
-//     // полезное здесь
-//     // возвращаем JSX => HTML подобный js
-//     return <div>
-//         <h3>Меню</h3>
-//         <ul>
-//             <li>1</li>
-//             <li>2</li>
-//             <li>3</li>
-//         </ul>
-//     </div>
-// }
-//
-//
-// function Hello () {
-//     debugger;
-//     alert("Hello")
-// }
-//
-// Hello();
 
 export default App;
