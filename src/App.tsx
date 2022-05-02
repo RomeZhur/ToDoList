@@ -16,8 +16,8 @@ export type TaskType = {
 
 function App () {
     const todoListTitle_1           = "What_1"
-    const todoListTitle_2        = "What_2"
-    const todoListTitle_3        = "What_3"
+    // const todoListTitle_2        = "What_2"
+    // const todoListTitle_3        = "What_3"
     const tasks: Array<TaskType> = [
         {id: 1, title: "HTML", isDone: true},
         {id: 2, title: "JS", isDone: true},
@@ -29,8 +29,8 @@ function App () {
                 title={todoListTitle_1}
                 tasks={tasks}
             />
-            <TodoList title={todoListTitle_2}/>
-            <TodoList title={todoListTitle_3}/>
+            {/*<TodoList title={todoListTitle_2}/>*/}
+            {/*<TodoList title={todoListTitle_3}/>*/}
         </div>
     );
 }
