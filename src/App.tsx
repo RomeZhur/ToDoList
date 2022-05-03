@@ -11,17 +11,16 @@ import {TodoList} from "./TodoList";
 function App () {
 
     const tasks = [
-        {id: 1, title: "HTML", isDone: true},
-        {id: 2, title: "JS", isDone: true},
-        {id: 3, title: "React", isDone: false},
-        {id: 3, title: "React", isDone: false},
+        {id: 1, title: "HTML", isDone: true},       /*el*/
+        {id: 2, title: "JS", isDone: true},         /*el*/
+        {id: 3, title: "React", isDone: false},     /*el*/
+        {id: 3, title: "React", isDone: false},     /*el*/
     ]
 
     return (
         <div className="App">
-            <TodoList title="What to learn" tasks={tasks}
-            />
-         </div>
+            <TodoList title="What to learn" tasks={tasks}/>
+        </div>
     );
 }
 
