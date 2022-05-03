@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import TodoList, {TaskType} from "./TodoList";
+import {TodoList} from "./TodoList";
 
 // GRUD -> GUI || CLI
 // create
@@ -19,9 +19,7 @@ function App () {
 
     return (
         <div className="App">
-            <TodoList
-                title="What to learn"
-                tasks={tasks}
+            <TodoList title="What to learn" tasks={tasks}
             />
          </div>
     );

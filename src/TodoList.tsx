@@ -11,7 +11,7 @@ type TaskType = {
     isDone: boolean
 }
 
-const TodoList = (props: PropsType) => {
+export const TodoList = (props: PropsType) => {
 
     return (
         <div>
@@ -22,9 +22,12 @@ const TodoList = (props: PropsType) => {
             </div>
 
             <ul>
-                {props.tasks.map((el)=>{
+                {props.tasks.map((el, id)=>{
                     return (
-                        <li><input type="checkbox" checked={el.isDone}/><span>{el.title}</span></li>
+                        <li key={id}>
+                            <input type="checkbox" checked={el.isDone}/>
+                            <span>{el.title}</span>
+                        </li>
                     )
                 })}
             </ul>
@@ -39,4 +42,4 @@ const TodoList = (props: PropsType) => {
     );
 };
 
-export default TodoList;
+
