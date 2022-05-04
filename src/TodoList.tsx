@@ -37,7 +37,7 @@ export const TodoList = (props: PropsType) => {
             </div>
 
             <ul>
-                {props.tasks.map((el, id)=>{
+                {colander.map((el, id)=>{
                     return (
                         <li key={id}>
                             <button onClick={()=>props.removeTask(el.id)}>Х</button>
