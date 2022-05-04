@@ -25,15 +25,15 @@ function App () {
     }
 
     const changeFilter = (filterValue:string) => {
-        console.log (filterValue)
+        setFilterForColander(filterValue)
     }
 
-    let colander =tasks
-     if (=== "Active"){
-        let colander=tasks.filter(el=>!el.isDone)
+    let colander = tasks
+     if (filterForColander === "Active"){
+        colander=tasks.filter(el=>!el.isDone)
     }
-    if (filter === "Completed"){
-        let colander=tasks.filter(el=>!el.isDone)
+    if (filterForColander === "Completed"){
+        colander=tasks.filter(el=>el.isDone)
     }
 
     return (
