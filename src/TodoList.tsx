@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 type PropsType = {
     title: string
@@ -14,6 +14,19 @@ type TaskType = {
 }
 
 export const TodoList = (props: PropsType) => {
+
+    const [filterForColander,setFilterForColander]=useState("All")
+
+    const changeFilter = (filterValue:string) => {
+        setFilterForColander(filterValue)
+
+        let colander = tasks
+        if (filterForColander === "Active"){
+            colander=tasks.filter(el=>!el.isDone)
+        }
+        if (filterForColander === "Completed"){
+            colander=tasks.filter(el=>el.isDone)
+        }
 
     return (
         <div>

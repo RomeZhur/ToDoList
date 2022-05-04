@@ -18,23 +18,22 @@ function App () {
         ]
     )
 
-    const [filterForColander,setFilterForColander]=useState("All")
-
+    // const [filterForColander,setFilterForColander]=useState("All")
+    //
+    // const changeFilter = (filterValue:string) => {
+    //     setFilterForColander(filterValue)
+    }
     const removeTask = (removeId:number) => {
         setTasks(tasks.filter((el)=> el.id !==removeId))
     }
 
-    const changeFilter = (filterValue:string) => {
-        setFilterForColander(filterValue)
-    }
-
-    let colander = tasks
-     if (filterForColander === "Active"){
-        colander=tasks.filter(el=>!el.isDone)
-    }
-    if (filterForColander === "Completed"){
-        colander=tasks.filter(el=>el.isDone)
-    }
+    // let colander = tasks
+    //  if (filterForColander === "Active"){
+    //     colander=tasks.filter(el=>!el.isDone)
+    // }
+    // if (filterForColander === "Completed"){
+    //     colander=tasks.filter(el=>el.isDone)
+    // }
 
     return (
         <div className="App">
