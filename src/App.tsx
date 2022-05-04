@@ -27,10 +27,6 @@ function App () {
     // const changeFilter = (filterValue:string) => {
     //     setFilterForColander(filterValue)
 
-
-
-
-
     // let colander = tasks
     //  if (filterForColander === "Active"){
     //     colander=tasks.filter(el=>!el.isDone)
