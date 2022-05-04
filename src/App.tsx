@@ -18,6 +18,8 @@ function App () {
         ]
     )
 
+    const [filterForColander,setFilterForColander]=useState("All")
+
     const removeTask = (removeId:number) => {
         setTasks(tasks.filter((el)=> el.id !==removeId))
     }
@@ -26,7 +28,13 @@ function App () {
         console.log (filterValue)
     }
 
-    let colander=tasks.filter(el=>!el.isDone)
+    let colander =tasks
+     if (=== "Active"){
+        let colander=tasks.filter(el=>!el.isDone)
+    }
+    if (filter === "Completed"){
+        let colander=tasks.filter(el=>!el.isDone)
+    }
 
     return (
         <div className="App">
