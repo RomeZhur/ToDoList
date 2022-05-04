@@ -13,11 +13,13 @@ type TaskType = {
     isDone: boolean
 }
 
+type FilterValueType = "All"|"Active"|"Completed"
+
 export const TodoList = (props: PropsType) => {
 
-    const [filterForColander,setFilterForColander]=useState("All")
+    const [filterForColander,setFilterForColander]=useState<FilterValueType>("All")
 
-    const changeFilter = (filterValue:string) => {
+    const changeFilter = (filterValue:FilterValueType) => {
         setFilterForColander(filterValue)
 
         let colander = props.tasks

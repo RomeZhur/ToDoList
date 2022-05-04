@@ -15,8 +15,7 @@ function App () {
             {id: 2, title: "JS", isDone: true},         //el
             {id: 3, title: "React", isDone: false},     //el
             {id: 3, title: "React", isDone: false},     //el
-        ]
-    )
+        ])
 
     const removeTask = (removeId:number) => {
         setTasks(tasks.filter((el)=> el.id !==removeId))
@@ -36,6 +35,7 @@ function App () {
     // }
 
     return (
+
         <div className="App">
             <TodoList
                 title="What to learn"
