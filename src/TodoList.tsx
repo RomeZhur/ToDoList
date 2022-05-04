@@ -4,7 +4,7 @@ type PropsType = {
     title: string
     tasks: TaskType []
     removeTask: (removeId:number)=>void
-    changeFilter: (filterValue:string)=>void
+    // changeFilter: (filterValue:string)=>void
 }
 
 type TaskType = {
@@ -20,12 +20,12 @@ export const TodoList = (props: PropsType) => {
     const changeFilter = (filterValue:string) => {
         setFilterForColander(filterValue)
 
-        let colander = tasks
+        let colander = props.tasks
         if (filterForColander === "Active"){
-            colander=tasks.filter(el=>!el.isDone)
+            colander=props.tasks.filter(el=>!el.isDone)
         }
         if (filterForColander === "Completed"){
-            colander=tasks.filter(el=>el.isDone)
+            colander=props.tasks.filter(el=>el.isDone)
         }
 
     return (
@@ -49,9 +49,9 @@ export const TodoList = (props: PropsType) => {
             </ul>
 
             <div>
-                <button onClick={()=>props.changeFilter("All")}>All</button>
-                <button onClick={()=>props.changeFilter("Active")}>Active</button>
-                <button onClick={()=>props.changeFilter("Completed")}>Completed</button>
+                <button onClick={()=>changeFilter("All")}>All</button>
+                <button onClick={()=>changeFilter("Active")}>Active</button>
+                <button onClick={()=>changeFilter("Completed")}>Completed</button>
             </div>
 
         </div>

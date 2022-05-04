@@ -22,6 +22,7 @@ function App () {
     //
     // const changeFilter = (filterValue:string) => {
     //     setFilterForColander(filterValue)
+
     }
     const removeTask = (removeId:number) => {
         setTasks(tasks.filter((el)=> el.id !==removeId))
@@ -39,9 +40,9 @@ function App () {
         <div className="App">
             <TodoList
                 title="What to learn"
-                tasks={colander}
+                tasks={tasks}
                 removeTask={removeTask}
-                changeFilter={changeFilter}
+                // changeFilter={changeFilter}
             />
         </div>
     );
