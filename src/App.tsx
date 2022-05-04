@@ -18,15 +18,18 @@ function App () {
         ]
     )
 
+    const removeTask = (removeId:number) => {
+        setTasks(tasks.filter((el)=> el.id !==removeId))
+    }
+
     // const [filterForColander,setFilterForColander]=useState("All")
     //
     // const changeFilter = (filterValue:string) => {
     //     setFilterForColander(filterValue)
 
-    }
-    const removeTask = (removeId:number) => {
-        setTasks(tasks.filter((el)=> el.id !==removeId))
-    }
+
+
+
 
     // let colander = tasks
     //  if (filterForColander === "Active"){
@@ -45,7 +48,7 @@ function App () {
                 // changeFilter={changeFilter}
             />
         </div>
-    );
+    )
 }
 
 export default App;
