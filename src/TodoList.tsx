@@ -16,21 +16,25 @@ type TaskType = {
 type FilterValueType = "All"|"Active"|"Completed"
 
 export const TodoList = (props: PropsType) => {
+
     const [filterForColander,setFilterForColander]=useState<FilterValueType>("All")
+
+    let colander = props.tasks
+
+    if (filterForColander === "Active"){
+        colander=props.tasks.filter(el=>!el.isDone)
+    }
+    if (filterForColander === "Completed"){
+        colander=props.tasks.filter(el=>el.isDone)
+    }
+
     const changeFilter = (filterValue:FilterValueType) => {
 
         setFilterForColander(filterValue)
 
-        let colander = props.tasks
-
-        if (filterForColander === "Active"){
-            colander=props.tasks.filter(el=>!el.isDone)
-        }
-        if (filterForColander === "Completed"){
-            colander=props.tasks.filter(el=>el.isDone)
-        }
     }
     return (
+
         <div>
             <h3>{props.title}</h3>
             <div>
@@ -55,6 +59,7 @@ export const TodoList = (props: PropsType) => {
                 <button onClick={()=>changeFilter("Active")}>Active</button>
                 <button onClick={()=>changeFilter("Completed")}>Completed</button>
             </div>
+
         </div>
     )
 }
