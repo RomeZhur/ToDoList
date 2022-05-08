@@ -55,9 +55,9 @@ export const TodoList = (props: PropsType) => {
             </ul>
 
             <div>
-                <button onClick={()=>changeFilter("All")}>All</button>
-                <button onClick={()=>changeFilter("Active")}>Active</button>
-                <button onClick={()=>changeFilter("Completed")}>Completed</button>
+                {/*<button onClick={()=>changeFilter("All")}>All</button>*/}
+                {/*<button onClick={()=>changeFilter("Active")}>Active</button>*/}
+                {/*<button onClick={()=>changeFilter("Completed")}>Completed</button>*/}
             </div>
 
         </div>
