@@ -21,18 +21,18 @@ function App () {
         setTasks(tasks.filter((el)=> el.id !==removeId))
     }
 
-    const [filterForColander,setFilterForColander]=useState("All")
-
-    const changeFilter = (filterValue:string) => {
-        setFilterForColander(filterValue)
-
-    let colander = tasks
-     if (filterForColander === "Active"){
-        colander=tasks.filter(el=>!el.isDone)
-    }
-    if (filterForColander === "Completed"){
-        colander=tasks.filter(el=>el.isDone)
-    }
+    // const [filterForColander,setFilterForColander]=useState("All")
+    //
+    // const changeFilter = (filterValue:string) => {
+    //     setFilterForColander(filterValue)
+    //
+    // let colander = tasks
+    //  if (filterForColander === "Active"){
+    //     colander=tasks.filter(el=>!el.isDone)
+    // }
+    // if (filterForColander === "Completed"){
+    //     colander=tasks.filter(el=>el.isDone)
+    // }
 
     return (
 
