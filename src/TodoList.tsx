@@ -17,7 +17,7 @@ type FilterValueType = "All"|"Active"|"Completed"
 
 export const TodoList = (props: PropsType) => {
 
-    const [filterForColander,setFilterForColander]=useState<FilterValueType>("All")
+    let [filterForColander,setFilterForColander]=useState<FilterValueType>("All")
 
     let colander = props.tasks
 
@@ -31,8 +31,8 @@ export const TodoList = (props: PropsType) => {
     const changeFilter = (filterValue:FilterValueType) => {
 
         setFilterForColander(filterValue)
-
     }
+
     return (
 
         <div>
