@@ -21,7 +21,7 @@ function App () {
         setTasks(tasks.filter((el)=> el.id !==removeId))
     }
 
-    // const [filterForColander,setFilterForColander]=useState("All")
+    // let [filterForColander,setFilterForColander]=useState("All")
     //
     // const changeFilter = (filterValue:string) => {
     //     setFilterForColander(filterValue)
