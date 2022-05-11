@@ -20,7 +20,7 @@ export function Todolist (props: PropsType) {
 	setTitle ('')
 
 	const AddTaskHandler = () => {
-
+		props.addTasks (title)
 	}
 
 
@@ -28,7 +28,7 @@ export function Todolist (props: PropsType) {
 		<h3>{props.title}</h3>
 		<div>
 			<input onChange={(e) => setTitle (e.currentTarget.value)}/>
-			<button onClick={() => props.addTasks (title)}>+</button>
+			<button onClick={AddTaskHandler}>+</button>
 		</div>
 		<ul>
 			{
