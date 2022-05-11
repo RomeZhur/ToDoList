@@ -19,6 +19,11 @@ export function Todolist (props: PropsType) {
 	const [title, setTitle] = useState ('')
 	setTitle ('')
 
+	const AddTaskHandler = () => {
+
+	}
+
+
 	return <div>
 		<h3>{props.title}</h3>
 		<div>
