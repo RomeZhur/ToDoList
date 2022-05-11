@@ -17,6 +17,7 @@ type PropsType = {
 
 export function Todolist (props: PropsType) {
 	const [title, setTitle] = useState ('')
+	setTitle ('')
 
 	return <div>
 		<h3>{props.title}</h3>
