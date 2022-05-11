@@ -17,10 +17,11 @@ type PropsType = {
 
 export function Todolist (props: PropsType) {
 	const [title, setTitle] = useState ('')
-	setTitle ('')
+
 
 	const AddTaskHandler = () => {
 		props.addTasks (title)
+		setTitle ('')
 	}
 
 
