@@ -24,10 +24,11 @@ export function Todolist (props: PropsType) {
 		setTitle ('')
 	}
 
+
 	return <div>
 		<h3>{props.title}</h3>
 		<div>
-			<input value={setTitle} onChange={(e) => setTitle (e.currentTarget.value)}/>
+			<input value={title} onChange={(e) => setTitle (e.currentTarget.value)}/>
 			<button onClick={AddTaskHandler}>+</button>
 		</div>
 		<ul>
