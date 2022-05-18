@@ -24,7 +24,6 @@ export function Todolist (props: PropsType) {
 		setTitle ('')
 	}
 
-
 	return <div>
 		<h3>{props.title}</h3>
 		<div>
