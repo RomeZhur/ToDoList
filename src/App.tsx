@@ -36,9 +36,9 @@ function App () {
 		tasksForTodolist = tasks.filter (t => t.isDone === true);
 	}
 
-	function changeFilter (value: FilterValuesType) {
-		setFilter (value);
-	}
+	// function changeFilter (value: FilterValuesType) {
+	// 	setFilter (value);
+	// }
 
 
 	return (
