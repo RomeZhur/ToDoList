@@ -15,15 +15,15 @@ function App () {
 		{id: v1 (), title: 'newString', isDone: false},
 	]);
 
-	// const addTasks = (newTitle: string) => {
-	// 	let newTask = {id: v1 (), title: newTitle, isDone: false}
-	// 	setTasks ([newTask, ...tasks])
-	// }
-
-	function removeTask (id: string) {
-		let filteredTasks = tasks.filter (t => t.id !== id);
-		setTasks (filteredTasks);
+	const addTasks = (newTitle: string) => {
+		let newTask = {id: v1 (), title: newTitle, isDone: false}
+		setTasks ([newTask, ...tasks])
 	}
+
+	// function removeTask (id: string) {
+	// 	let filteredTasks = tasks.filter (t => t.id !== id);
+	// 	setTasks (filteredTasks);
+	// }
 
 	let [filter, setFilter] = useState<FilterValuesType> ('all');
 
