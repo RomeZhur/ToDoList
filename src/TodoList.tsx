@@ -18,11 +18,11 @@ type PropsType = {
 export function Todolist (props: PropsType) {
 	const [title, setTitle] = useState ('')
 
-
-	const AddTaskHandler = () => {
-		props.addTasks (title)
-		setTitle ('')
-	}
+	//
+	// const AddTaskHandler = () => {
+	// 	props.addTasks (title)
+	// 	setTitle ('')
+	// }
 
 	return <div>
 		<h3>{props.title}</h3>
