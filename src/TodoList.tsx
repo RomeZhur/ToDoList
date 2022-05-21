@@ -52,8 +52,8 @@ export function Todolist (props: PropsType) {
 			}}>
 				Active
 			</button>
-			<button onClick={() => {
-				props.changeFilter ('completed')
+			{/*<button onClick={() => {*/}
+			{/*	props.changeFilter ('completed')*/}
 			}}>
 				Completed
 			</button>
