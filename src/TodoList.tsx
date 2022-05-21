@@ -47,8 +47,8 @@ export function Todolist (props: PropsType) {
 				props.changeFilter ('all')
 			}}> All
 			</button>
-			<button onClick={() => {
-				props.changeFilter ('active')
+			{/*<button onClick={() => {*/}
+			{/*	props.changeFilter ('active')*/}
 			}}>
 				Active
 			</button>
