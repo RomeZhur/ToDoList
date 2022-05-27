@@ -33,7 +33,7 @@ function App () {
 		tasksForTodolist = tasks.filter (t => t.isDone === false);
 	}
 	if (filter === 'completed') {
-		// tasksForTodolist = tasks.filter (t => t.isDone === true);
+		tasksForTodolist = tasks.filter (t => t.isDone === true);
 	}
 
 	function changeFilter (value: FilterValuesType) {
